@@ -4,7 +4,6 @@ using namespace Antix;
 
 #if GRAPHICS
 #include <GLUT/glut.h> // OS X users need <glut/glut.h> instead
-#include "gltzpr/zpr.h" // zoom-pan-rotate GLUT utility
 
 int Robot::winsize( 700 );
 

@@ -14,14 +14,14 @@ CXXFLAGS = -g -O3 -Wall $(GLUTFLAGS)
 #CXXFLAGS = -g -Wall $(GLUTFLAGS)
 LIBS =  -g -lm $(GLUTLIBS)
 
-HDR = antix.h controller.h
-SRC = antix.cc controller.cc gui.cc main.cc gltzpr/zpr.c
+HDR = tri.h controller.h
+SRC = tri.cc controller.cc gui.cc main.cc
 
-all: antix
+all: tri
 
-antix: $(SRC) $(HDR)
+tri: $(SRC) $(HDR)
 	$(CC) $(CXXFLAGS) $(LIBS) -o $@ $(SRC) 
 
 clean:
-	rm -f *.o antix
+	rm -f *.o tri
 
